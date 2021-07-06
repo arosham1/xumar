@@ -80,7 +80,7 @@ function embedbuilder(client, deletetime, message, color, title, description, th
     try {
         let embed = new Discord.MessageEmbed()
             .setColor(color)
-            .setFooter("Made By Kabir Jaipal aka Tech Boy Gaming")
+            .setFooter("")
             .setAuthor(message.author.tag)
         if (title) embed.setTitle(title);
         if (description) embed.setDescription(description);
@@ -176,7 +176,7 @@ function lyricsEmbed(client, message, song) {
                 .setThumbnail(song.thumbnail)
                 .setColor(config.colors.yes)
                 .setDescription(current)
-                .setFooter("Made By Kabir Jaipal aka Tech Boy Gaming")
+                .setFooter("")
             embeds.push(embed);
         }
         return embeds;
@@ -210,7 +210,7 @@ async function playsongyes(client, message, queue, song) {
             .addField("❔ Filter:", `>>> \`${queue.filter || "❌"}\``, true)
             .addField("🎧 DJ-Role:", `>>> ${djs}`, true)
             .addField(`>>> For Lyrics Just Type ${config.prefix}lyrics \`song name\` \n Note:- Link Not work Only Type Name of Song`, true)
-            .setFooter("Made By Kabir Jaipal aka Tech Boy Gaming")
+            .setFooter("Dr xumar")
             .setAuthor(message.author.tag, message.member.user.displayAvatarURL({
                 dynamic: true
             }))
@@ -436,7 +436,7 @@ async function playsongyes(client, message, queue, song) {
                 //         .setThumbnail(icon)
                 //         .setDescription(lyrics)
                 //         .setAuthor(author)
-                //         .setFooter("Made By Kabir Jaipal aka Tech Boy Gaming")
+                //         .setFooter("")
                 //         .setTimestamp();
 
                 //     if (lyricsEmbed.description.length >= 2048)
@@ -483,7 +483,7 @@ function curembed(client, message) {
             .addField("↪️ Autoplay:", `>>> ${queue.autoplay ? "✅" : "❌"}`, true)
             .addField("❔ Filter:", `>>> \`${queue.filter || "❌"}\``, true)
             .addField("🎧 DJ-Role:", `>>> ${djs}`, true)
-            .setFooter("Made By Kabir Jaipal aka Tech Boy Gaming")
+            .setFooter("")
             .setAuthor(message.author.tag, message.member.user.displayAvatarURL({
                 dynamic: true
             }))
