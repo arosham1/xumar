@@ -19,9 +19,9 @@ module.exports = {
             .setAuthor(message.author.username)
             .setDescription(`\`Click Below On Invite Link\``)
             .addField("**__BOT BY:__**", `
-                >>> <@821095540569407508> \`ᴋᴀʙɪʀ々ꜱɪɴɢʜ🌙#8148\` [\`INVITE\`](https://discord.com/api/oauth2/authorize?client_id=848431361094058006&permissions=8&scope=bot)
+                >>> \`\` [\`INVITE\`]()
                 `)
-            .setFooter("Made By Kabir Jaipal aka Tech Boy Gaming")
+            .setFooter("")
 
         message.channel.send(invite)
     }
