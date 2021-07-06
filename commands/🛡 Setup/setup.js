@@ -15,7 +15,7 @@ module.exports = {
      */
     run: async (client, message, args) => {
         // code here
-        message.guild.channels.create("JUGNU Music - Requests", {
+        message.guild.channels.create("music Rimex- Requests", {
             type: 'category',
             permissionOverwrites: [{
                 id: message.guild.id,
@@ -29,7 +29,7 @@ module.exports = {
             if (boosts >= 2) maxbitrate = 128000;
             if (boosts >= 15) maxbitrate = 256000;
             if (boosts >= 30) maxbitrate = 384000;
-            message.guild.channels.create(`🎧｜JUGNU Music`, {
+            message.guild.channels.create(`🎧｜Rimex`, {
                 type: 'voice', //voice Channel
                 bitrate: maxbitrate, //set the bitrate to the maximum possible
                 userLimit: 30, //set the limit for voice users
@@ -39,7 +39,7 @@ module.exports = {
                     allow: ['VIEW_CHANNEL', "CONNECT"],
                 },],
             }).then((channel2) => {
-                message.guild.channels.create(`🎵｜requests`, {
+                message.guild.channels.create(`🎵｜Rimex cod`, {
                     type: 'text', // text channel
                     rateLimitPerUser: 6, //set chat delay
                     topic: `To request a Track, simply Type the **SONG NAME** into the Channel or the **URL** and the Bot will play it! Make sure that you are in the **right** Voice Channel (🎧｜JUGNU Music)!`,
@@ -59,18 +59,18 @@ module.exports = {
                         .setColor(config.colors.yes)
                         .setThumbnail(client.user.displayAvatarURL())
                         .setAuthor(message.author.username)
-                        .setTitle("JUGNU Music | Request | Guide")
+                        .setTitle("Rimex Music | Request | Guide")
                         .setDescription(`Enter the song name or URL to play a song\n\n For Example ${config.prefix}play \`Rockstar baby song\``)
-                        .setFooter("Made By Kabir Jaipal aka Tech Boy Gaming")
+                        .setFooter("")
 
                     let dusra = new MessageEmbed()
                         .setColor(config.colors.yes)
                         .setThumbnail(client.user.displayAvatarURL())
                         .setAuthor(message.author.username)
-                        .setTitle("JUNGU Music - Best Free Music Bot of 2021")
-                        .setDescription(`Join a voice channel and enter a song name or url to play.\n[Invite JUGNU Music](https://discord.com/api/oauth2/authorize?client_id=848431361094058006&permissions=8&scope=bot) • [Join Server](https://discord.gg/tVWrU5PWZV) • [Subscribe Now](https://www.youtube.com/channel/UCINCfgiBYCykOemiuVhqtIQ)`)
-                        .setImage('https://thumbs.gfycat.com/MeekBeautifulCaterpillar-size_restricted.gif')
-                        .setFooter("Made By Kabir Jaipal aka Tech Boy Gaming")
+                        .setTitle("Rimex - Best Free Music Bot of 2021")
+                        .setDescription(`Join a voice channel and enter a song name or url to play.\n[Invite Rimex Music]() • [Join Server]() • [Subscribe Now]()`)
+                        .setImage('')
+                        .setFooter("")
 
                     //send a temp message
                     channel3.send(new MessageEmbed().setColor(config.colors.yes).setDescription("Setting Up..")).then(msg => {
